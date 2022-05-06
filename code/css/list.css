@@ -1,0 +1,150 @@
+.filterBox {
+  width: 1200px;
+  margin: 20px auto;
+  border: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.filterBox > .content {
+  display: flex;
+  /* padding: 5px; */
+  margin-bottom: 15px;
+}
+
+.filterBox > .content > p {
+  width: 120px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.filterBox > .content > ul {
+  font-size: 20px;
+  align-items: center;
+  /* justify-content: left; */
+  text-align: center;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.filterBox > .content > ul > li {
+  padding: 5px 10px;
+  font-size: 20px;
+}
+.filterBox > .content > ul > li:hover,
+.filterBox > .content > ul > li.active {
+  background-color: pink;
+  color: #fff;
+}
+
+.filterBox > .content > input {
+  font-size: 20px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.filterBox > .content > span {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.filterBox > .content > span.left,
+.filterBox > .content > span.right {
+  background-color: skyblue;
+  color: #fff;
+}
+
+.filterBox > .content > span.disable {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.filterBox > .content > select {
+  margin-left: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.filterBox > .content > input.page {
+  width: 50px;
+  margin: 0 20px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.filterBox > .content > button {
+  font-size: 20px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.list {
+  width: 1200px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list > li {
+  width: 280px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list > li > .show {
+  width: 100%;
+  height: 280px;
+  position: relative;
+}
+
+.list > li > .show > div {
+  position: absolute;
+  background-color: red;
+  right: 0;
+  top: 0;
+}
+
+.list > li > .show > div.sale {
+  right: 60px;
+}
+
+.list > li > .info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.list > li > .info > .title {
+  overflow: hidden;
+  height: 20px;
+}
+
+.list > li > .info > .price {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list > li > .info > .price > .currentPrice {
+  color: red;
+}
+
+.list > li > .info > .price > .oldPrice {
+  color: #ccc;
+  font-size: 16px;
+}
+
+.list > li > .info > button {
+  padding: 5px;
+  cursor: pointer;
+}

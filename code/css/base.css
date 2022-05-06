@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a, a:active, a:hover, a:link {
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  outline: none;
+  /* background-color: pink; */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.header {
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: skyblue;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.header > p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+
+  display: none;
+  
+  font-size: 20px;
+}
+
+.header > p.active {
+  display: block;
+}

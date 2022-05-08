@@ -6,4 +6,4 @@ $ git clone git@github.com:zlih/jQueryShop.git
 # 运行server
 $ npm install
 
-$ node .\app.js
+$ node app.js
